@@ -2,7 +2,7 @@
 
 SASS boilerplate sample theme including some mixins, breakpoints, variables and [normalize.css](https://necolas.github.io/normalize.css/).
 
-![SASS](https://sass-lang.com/assets/img/styleguide/black-7fd39aa3.png)
+![SASS](https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png)
 
 ## Adding a new .scss file 
 When a new file created in any directory, it needs to @forward the file name in the index.scss on the same directory.
