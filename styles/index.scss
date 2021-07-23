@@ -1,0 +1,16 @@
+/// global stylesheet ( one stylesheet to rule them all )
+
+// 01-abstract
+@use 'abstracts';
+
+// 02-vendors
+@use 'vendors';
+
+// 03-base
+@use 'base';
+
+// 04-components
+@use 'components';
+
+// 05-layout
+@use 'layout';
