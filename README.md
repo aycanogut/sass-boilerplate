@@ -13,6 +13,7 @@ If you want to use the mixin, variables or breakpoints on a new file, pass the a
 
 `@use '../abstracts/' as *;`
 
+## Folders
 ### abstracts
 
 Breakpoints, variables and mixin values.
