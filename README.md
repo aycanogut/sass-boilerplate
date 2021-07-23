@@ -3,10 +3,10 @@
 SASS boilerplate sample theme including some mixins, breakpoints, variables and [normalize.css](https://necolas.github.io/normalize.css/).
 
 
-#### Adding a new .scss file 
+## Adding a new .scss file 
 When a new file created in any directory, it needs to @forward the file name in the index.scss on the same directory.
 
-#### Usage of abstracts folder
+## Usage of abstracts folder
 
 If you want to use the mixin, variables or breakpoints on a new file, pass the abstracts folder as a global value on the top of the file. 
 
