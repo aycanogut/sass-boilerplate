@@ -12,7 +12,9 @@ When a new file created in any directory, it needs to @forward the file name in 
 
 If you want to use the mixin, variables or breakpoints on a new file, pass the abstracts folder as a global value on the top of the file. 
 
-`@use '../abstracts/' as *;`
+```
+@use '../abstracts/' as *;
+```
 <br>
 
 ## Examples of breakpoints and font-weight.  
@@ -21,55 +23,71 @@ If you want to use the mixin, variables or breakpoints on a new file, pass the a
 
 Edit the breakpoints object as you wish.
 
-`$breakpoints: (
+```
+$breakpoints: (
   small: 36em,
   medium: 47em,
   large: 75em,
-);`
+);
+```
 
 Use the SASS [@mixin and @include functions](https://sass-lang.com/documentation/at-rules/mixin) to define and apply the breakpoints.
 
-`@mixin mq($args) {
+```
+@mixin mq($args) {
   $size: map-get($breakpoints, $args);     
     @media only screen and (min-width: $size) {
     @content;
   }
-}`
+}
+```
 
 Apply with the @include in any class.  
   
-`some-content {
+```
+some-content {
   @include mq(small) {
   display:flex;
   }
-}`
+}
+```
 
 Compiles to:
 
-`@media only screen and (min-width: 36em){
-  .torso{display:flex}
-  }`
+```
+@media only screen and (min-width: 36em){
+  .torso{
+  display:flex
+  }
+}
+```
 <br>
 
 ### Font-weights
 
 Edit the font-weight object as you wish.
 
-`$font-weight: (
+```
+$font-weight: (
   "regular": 400,
   "semi-bold": 500,
   "bold": 700,
-);`
+);
+```
 
 Use the SASS [map-get function](https://sass-lang.com/documentation/modules/map) to choose the font-weight.
 
-`font-weight: map-get($font-weight, bold);`
+```
+font-weight: map-get($font-weight, bold);
+```
 
 Compiles to: 
 
-`h1 {
+```
+h1 {
   font-weight: 700;
- }`
+ }
+```
 <hr> 
 
 ## Folders
