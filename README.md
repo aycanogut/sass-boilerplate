@@ -70,8 +70,7 @@ Compiles to:
 `h1 {
   font-weight: 700;
  }`
-  
-<br> 
+<hr> 
 
 ## Folders
 ### abstracts
