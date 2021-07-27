@@ -5,13 +5,12 @@ SASS boilerplate sample theme including some mixins, breakpoints, variables and 
 ![SASS](https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png)  
 <br>
   
-<<<<<<< HEAD
 # Adding a new .scss file 
-When a new file created in any directory, it needs to @forward the file name in the index.scss on the same directory to compile on main .scss file.
+When a new file created in any directory, the name of the file should be @forward to the index.scss on the same directory. It won't compile into the main.scss file otherwise. 
 
 # Usage of abstracts folder
 
-If you want to use the mixin, variables or breakpoints on a any .scss file, pass the abstracts folder as a global value on the top of the file. 
+Pass the abstracts folder as a global value at the start of any.scss file if you wish to utilize the mixin, variables, or breakpoints. 
 
 ```
 @use '../abstracts/' as *;
@@ -50,7 +49,7 @@ Apply @include function to any class.
 ```
 some-content {
   @include mq(small) {
-  display:flex;
+    display:flex;
   }
 }
 ```
@@ -60,7 +59,7 @@ some-content {
 ```
 @media only screen and (min-width: 36em){
   .torso{
-  display:flex
+    display:flex
   }
 }
 ```
@@ -127,12 +126,7 @@ Apply @include function to a container or wrapper element.
 }
 ```
 
-
 Apply @include function to an element and define arguments in the order of mixin declaration.
-=======
-## Adding a new .scss file 
-When a new file created in any directory, it needs to @forward the file name in the index.scss on the same directory to compile on main .scss file.
->>>>>>> a8f70e11e8b808cfaa24b97b6343b80366675abf
 
 ```
 .element {
@@ -141,7 +135,6 @@ When a new file created in any directory, it needs to @forward the file name in 
 
 ```
 
-<<<<<<< HEAD
 ##### Compiles to:
 
 ```
@@ -221,58 +214,7 @@ Apply @include function to an element and it will compiles the autoprefixer rule
 }
 ```
 
-=======
-```
-@use '../abstracts/' as *;
-```
 <br>
-
-## Examples of @mixin functions
-
-### Breakpoints
-
-Edit the breakpoints object as you wish.
-
-```
-$breakpoints: (
-  small: 36em,
-  medium: 47em,
-  large: 75em,
-);
-```
-
-Use the SASS [@mixin and @include functions](https://sass-lang.com/documentation/at-rules/mixin) to define and apply the breakpoints.
-
-```
-@mixin mq($args) {
-  $size: map-get($breakpoints, $args);     
-    @media only screen and (min-width: $size) {
-    @content;
-  }
-}
-```
-
-Apply with the @include in any class.  
-  
-```
-some-content {
-  @include mq(small) {
-  display:flex;
-  }
-}
-```
-
-Compiles to:
-
-```
-@media only screen and (min-width: 36em){
-  .torso{
-  display:flex
-  }
-}
-```
-<br>
->>>>>>> a8f70e11e8b808cfaa24b97b6343b80366675abf
 
 ## Example of font-weight
 
@@ -299,9 +241,12 @@ h1 {
   font-weight: 700;
  }
 ```
+<br>
+
 <hr> 
 
-## Folders
+## Folders  
+
 ### abstracts
 
 Breakpoints, variables and mixin values.
