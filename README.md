@@ -5,6 +5,7 @@ SASS boilerplate sample theme including some mixins, breakpoints, variables and 
 ![SASS](https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png)  
 <br>
   
+<<<<<<< HEAD
 # Adding a new .scss file 
 When a new file created in any directory, it needs to @forward the file name in the index.scss on the same directory to compile on main .scss file.
 
@@ -128,6 +129,10 @@ Apply @include function to a container or wrapper element.
 
 
 Apply @include function to an element and define arguments in the order of mixin declaration.
+=======
+## Adding a new .scss file 
+When a new file created in any directory, it needs to @forward the file name in the index.scss on the same directory to compile on main .scss file.
+>>>>>>> a8f70e11e8b808cfaa24b97b6343b80366675abf
 
 ```
 .element {
@@ -136,6 +141,7 @@ Apply @include function to an element and define arguments in the order of mixin
 
 ```
 
+<<<<<<< HEAD
 ##### Compiles to:
 
 ```
@@ -215,6 +221,58 @@ Apply @include function to an element and it will compiles the autoprefixer rule
 }
 ```
 
+=======
+```
+@use '../abstracts/' as *;
+```
+<br>
+
+## Examples of @mixin functions
+
+### Breakpoints
+
+Edit the breakpoints object as you wish.
+
+```
+$breakpoints: (
+  small: 36em,
+  medium: 47em,
+  large: 75em,
+);
+```
+
+Use the SASS [@mixin and @include functions](https://sass-lang.com/documentation/at-rules/mixin) to define and apply the breakpoints.
+
+```
+@mixin mq($args) {
+  $size: map-get($breakpoints, $args);     
+    @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+```
+
+Apply with the @include in any class.  
+  
+```
+some-content {
+  @include mq(small) {
+  display:flex;
+  }
+}
+```
+
+Compiles to:
+
+```
+@media only screen and (min-width: 36em){
+  .torso{
+  display:flex
+  }
+}
+```
+<br>
+>>>>>>> a8f70e11e8b808cfaa24b97b6343b80366675abf
 
 ## Example of font-weight
 
