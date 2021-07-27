@@ -269,7 +269,9 @@ You can store all helper utilities like normalize.css, Bootstrap etc.
 
 <br>
 <hr>
+
 I took some of the @mixin patterns from [Kevin Powell](https://www.kevinpowell.co/)'s [Github page.](https://github.com/kevin-powell) Check his [Youtube Channel](https://www.youtube.com/kevinpowell) for great information.
+
 <hr>
 <br>
 
