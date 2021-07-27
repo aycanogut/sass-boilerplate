@@ -17,7 +17,7 @@ If you want to use the mixin, variables or breakpoints on a new file, pass the a
 ```
 <br>
 
-## Examples of breakpoints and font-weight.  
+## Examples of @mixin functions
 
 ### Breakpoints
 
@@ -63,7 +63,7 @@ Compiles to:
 ```
 <br>
 
-### Font-weights
+## Example of font-weight
 
 Edit the font-weight object as you wish.
 
