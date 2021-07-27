@@ -249,7 +249,7 @@ h1 {
 
 ### abstracts
 
-Breakpoints, variables and mixin values.
+Breakpoints, variables, functions and mixin values.
 
 ### base
 
@@ -265,7 +265,7 @@ Styles of page elements like navigation bar, header, footer etc.
 
 ### pages
 
-Fifferent pages specific styles.
+Specific styles for different pages. 
 
 ### themes
 
@@ -273,7 +273,7 @@ Specific themes like admin page, dark mode etc.
 
 ### vendor
 
-You can store all helper utilities like normalize.css, Bootstrap etc.
+Store all helper utilities like normalize.css, Bootstrap etc.
 
 
 <br>
