@@ -257,11 +257,20 @@ Base styles and typography rules.
 
 ### components
 
-For all the components. 
+All the components. 
 
 ### layout
 
 Styles of page elements like navigation bar, header, footer etc.
+
+### pages
+
+Fifferent pages specific styles.
+
+### themes
+
+Specific themes like admin page, dark mode etc.
+
 ### vendor
 
 You can store all helper utilities like normalize.css, Bootstrap etc.
