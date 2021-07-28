@@ -12,7 +12,7 @@ When a new file created in any directory, the name of the file should be @forwar
 
 Pass the abstracts folder as a global value at the start of any.scss file if you wish to utilize the mixin, variables, or breakpoints. 
 
-```
+```scss
 @use '../abstracts/' as *;
 ```
 <br>
@@ -23,7 +23,7 @@ Pass the abstracts folder as a global value at the start of any.scss file if you
 
 Edit the breakpoints object as you wish.
 
-```
+```scss
 $breakpoints: (
   small: 36em,
   medium: 47em,
@@ -35,7 +35,7 @@ Use the SASS [@mixin and @include functions](https://sass-lang.com/documentation
 
 ###### @mixin rules:
 
-```
+```scss
 @mixin mq($args) {
   $size: map-get($breakpoints, $args);     
     @media only screen and (min-width: $size) {
@@ -46,8 +46,8 @@ Use the SASS [@mixin and @include functions](https://sass-lang.com/documentation
 
 Apply @include function to any class.  
   
-```
-some-content {
+```scss
+.some-content {
   @include mq(small) {
     display:flex;
   }
@@ -56,7 +56,7 @@ some-content {
 
 ##### Compiles to:
 
-```
+```css
 @media only screen and (min-width: 36em){
   .torso{
     display:flex
@@ -68,7 +68,7 @@ some-content {
 
 ###### @mixin rules:
 
-```
+```scss
 @mixin make-container($padding-x: $container-padding-x) {
   width: 100%;
   padding-right: $padding-x;
@@ -80,7 +80,7 @@ some-content {
 
 Apply @include function to a container or wrapper element. 
 
-```
+```scss
 .container {
   @include make-container(20em);
 }
@@ -88,7 +88,7 @@ Apply @include function to a container or wrapper element.
 
 ##### Compiles to:
 
-```
+```css
 .container {
   width: 100%;
   padding-right: 20em;
@@ -102,7 +102,7 @@ Apply @include function to a container or wrapper element.
 
 ###### @mixin rules:
 
-```
+```scss
 @mixin pseudo(
   $loc: before,
   $content: "",
@@ -128,7 +128,7 @@ Apply @include function to a container or wrapper element.
 
 Apply @include function to an element and define arguments in the order of mixin declaration.
 
-```
+```scss
 .element {
   @include pseudo(before, "content", absolute, 0, 0, 1em, 2em);
 }
@@ -137,7 +137,7 @@ Apply @include function to an element and define arguments in the order of mixin
 
 ##### Compiles to:
 
-```
+```css
 .element {
   position: relative
 }
@@ -156,7 +156,7 @@ Apply @include function to an element and define arguments in the order of mixin
 
 ###### @mixin rules:
 
-```
+```scss
 @mixin transition($args) {
   -webkit-transition: $args;
   -moz-transition: $args;
@@ -167,7 +167,7 @@ Apply @include function to an element and define arguments in the order of mixin
 
 Apply @include function to an element and it will compiles the autoprefixer rules for cross browser compatibility.
 
-```
+```scss
 .element {
   @include transition(1s all ease);
 }
@@ -175,7 +175,7 @@ Apply @include function to an element and it will compiles the autoprefixer rule
 
 ##### Compiles to:
 
-```
+```css
 .element {
   -webkit-transition: 1s all ease;
   -moz-transition: 1s all ease;
@@ -188,7 +188,7 @@ Apply @include function to an element and it will compiles the autoprefixer rule
 
 ###### @mixin rules:
 
-```
+```scss
 @mixin box-shadow($args) {
   -webkit-box-shadow: $args;
   -moz-box-shadow: $args;
@@ -198,7 +198,7 @@ Apply @include function to an element and it will compiles the autoprefixer rule
 
 Apply @include function to an element and it will compiles the autoprefixer rules for cross browser compatibility.
 
-```
+```scss
 .element {
   @include box-shadow(0px 10px 15px -3px rgba(0, 0, 0, 0.1));
 }
@@ -206,7 +206,7 @@ Apply @include function to an element and it will compiles the autoprefixer rule
 ```
 ##### Compiles to:
 
-```
+```css
 .element {
   -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, .1);
   -moz-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, .1);
@@ -220,7 +220,7 @@ Apply @include function to an element and it will compiles the autoprefixer rule
 
 Edit the font-weight object as you wish.
 
-```
+```scss
 $font-weight: (
   "regular": 400,
   "semi-bold": 500,
@@ -230,13 +230,13 @@ $font-weight: (
 
 Use the SASS [map-get function](https://sass-lang.com/documentation/modules/map) to choose the font-weight.
 
-```
+```scss
 font-weight: map-get($font-weight, bold);
 ```
 
 Compiles to: 
 
-```
+```css
 h1 {
   font-weight: 700;
  }
