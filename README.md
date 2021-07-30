@@ -1,6 +1,7 @@
 # sass-boilerplate
 
 SASS boilerplate sample theme including some mixins, breakpoints, variables and [normalize.css](https://necolas.github.io/normalize.css/).  
+No need to install any package, just download the repo and add to your project.  
 <br><br>
 ![SASS](https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png)  
 <br>
@@ -216,7 +217,7 @@ Apply @include function to an element and it will compiles the autoprefixer rule
 
 <br>
 
-## Example of font-weight
+# Example of font-weight
 
 Edit the font-weight object as you wish.
 
@@ -247,31 +248,31 @@ h1 {
 
 ## Folders  
 
-### abstracts
+### ```abstracts```
 
 Breakpoints, variables, functions and mixin values.
 
-### base
+### ```base```
 
 Base styles and typography rules.
 
-### components
+### ```components```
 
 All the components. 
 
-### layout
+### ```layout```
 
 Styles of page elements like navigation bar, header, footer etc.
 
-### pages
+### ```pages```
 
 Specific styles for different pages. 
 
-### themes
+### ```themes```
 
 Specific themes like admin page, dark mode etc.
 
-### vendor
+### ```vendor```
 
 Store all helper utilities like normalize.css, Bootstrap etc.
 
