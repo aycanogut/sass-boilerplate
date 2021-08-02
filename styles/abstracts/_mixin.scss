@@ -20,6 +20,16 @@
   margin-left: auto;
 }
 
+// grid
+@mixin grid($cols, $marg) {
+  margin: 0 $marg $marg 0;
+  width: ( (100% - (($cols - 1) * $marg )) / $cols );
+
+  &:nth-child(#{$cols}n){
+      margin-right: 0;
+  }
+}
+
 //  position with pseudo classes
 @mixin pseudo(
   $loc: before,
