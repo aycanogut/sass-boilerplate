@@ -65,6 +65,50 @@ Apply @include function to any class.
 }
 ```
 
+## Grid
+
+###### @mixin rules:
+
+```scss
+@mixin grid($cols, $marg) {
+  margin: 0 $marg $marg 0;
+  width: ((100% - (($cols - 1) * $marg)) / $cols);
+
+  &:nth-child(#{$cols}n) {
+    margin-right: 0;
+  }
+}
+```
+
+Apply @include function to any class. First argument is a grid number (1-12), second one is for spacing.
+
+```scss
+.box {
+  @include grid(4, 2%);
+  background-color: limegreen;
+  width: 100px;
+  height: 100px;
+}
+```
+
+##### Compiles to:
+
+```css
+.box {
+  margin: 0 2% 2% 0;
+  width: 23.5%;
+  background-color: #32cd32;
+  width: 100px;
+  height: 100px
+}
+
+.box:nth-child(4n) {
+  margin-right: 0
+}
+```
+
+
+
 ## Container
 
 ###### @mixin rules:
