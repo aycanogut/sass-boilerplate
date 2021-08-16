@@ -329,4 +329,7 @@ I took some of the @mixin patterns from [Kevin Powell](https://www.kevinpowell.c
 <hr>
 <br>
 
+## License
+
+Licensed under the MIT license, see [LICENSE](https://github.com/aycanogut/sass-boilerplate/blob/main/LICENSE) for details.
 
