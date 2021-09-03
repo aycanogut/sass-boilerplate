@@ -1,8 +1,10 @@
 # sass-boilerplate
 
+<center>
 <br><br>
 ![image](./src/assets/images/tech-stack.png)
 <br>
+</center>
 
 Ready to use SASS boilerplate to develop web projects with [gulp.js](https://gulpjs.com/).
 mixins, breakpoints, variables and [normalize.css](https://necolas.github.io/normalize.css/).  
