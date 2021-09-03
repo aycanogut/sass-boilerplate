@@ -1,8 +1,8 @@
-# sass-gulp-boilerplate
+# sass-boilerplate
 
 <br><br>
 <center>
-![](./src/assets/images/tech-stack.png)
+![image](./src/assets/images/tech-stack.png)
 </center>
 <br>
 
