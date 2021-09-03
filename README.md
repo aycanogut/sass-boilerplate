@@ -1,11 +1,35 @@
-# sass-boilerplate
+# sass-gulp-boilerplate
 
-SASS boilerplate sample theme including some mixins, breakpoints, variables and [normalize.css](https://necolas.github.io/normalize.css/).  
-No need to install any package, just download the repo and add to your project.  
 <br><br>
-![SASS](https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png)  
+<center>
+![](./src/assets/images/tech-stack.png)
+</center>
 <br>
-  
+
+Ready to use SASS boilerplate to develop web projects with [gulp.js](https://gulpjs.com/).
+mixins, breakpoints, variables and [normalize.css](https://necolas.github.io/normalize.css/).  
+
+### Gulp Features
+
+- [cssnano](https://cssnano.co/)
+- [autoprefixer](https://github.com/postcss/autoprefixer)
+- [babel](https://babeljs.io/)
+- [terser](https://terser.org/)
+- [browsersync](https://browsersync.io/)
+
+
+# Installation
+
+###yarn:
+```
+yarn install
+```
+
+###npm
+```
+npm install 
+```
+
 # Adding a new .scss file 
 When a new file created in any directory, the name of the file should be @forward to the index.scss on the same directory. It won't compile into the main.scss file otherwise. 
 
