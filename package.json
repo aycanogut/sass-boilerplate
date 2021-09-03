@@ -1,0 +1,22 @@
+{
+  "name": "sass-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aycanogut/sass-boilerplate.git",
+  "author": "Aycan Öğüt <aycanonfire@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
+    "autoprefixer": "^10.3.4",
+    "browser-sync": "^2.27.5",
+    "cssnano": "^5.0.8",
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
+    "postcss": "^8.3.6"
+  }
+}
