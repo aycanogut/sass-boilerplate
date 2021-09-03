@@ -1,9 +1,7 @@
 # sass-boilerplate
 
 <br><br>
-<center>
-![SASS](https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png)  
-</center>
+![image](./src/assets/images/tech-stack.png)
 <br>
 
 Ready to use SASS boilerplate to develop web projects with [gulp.js](https://gulpjs.com/).
