@@ -2,7 +2,7 @@
 
 <br><br>
 <center>
-![image](./src/assets/images/tech-stack.png)
+![SASS](https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png)  
 </center>
 <br>
 
