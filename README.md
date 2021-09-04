@@ -42,21 +42,21 @@ npm install
 │     ├─ js
 │     │  └─ script.js
 │     └─ styles
-│        ├─ abstracts
+│        ├─ abstracts - Breakpoints, variables, functions and mixin values.
 │        │  ├─ _breakpoint.scss
 │        │  ├─ _fonts.scss
 │        │  ├─ _functions.scss
 │        │  ├─ _index.scss
 │        │  ├─ _mixin.scss
 │        │  └─ _variables.scss
-│        ├─ base
+│        ├─ base - Base styles and typography rules.
 │        │  ├─ _base.scss
 │        │  ├─ _index.scss
 │        │  └─ _typo.scss
-│        ├─ components
+│        ├─ components - All the components. 
 │        │  ├─ _components.scss
 │        │  └─ _index.scss
-│        ├─ layout
+│        ├─ layout - Styles of page elements like navigation bar, header, footer etc.
 │        │  ├─ _footeer.scss
 │        │  ├─ _grid.scss
 │        │  ├─ _header.scss
@@ -64,14 +64,14 @@ npm install
 │        │  ├─ _layout.scss
 │        │  ├─ _nav.scss
 │        │  └─ _sidebar.scss
-│        ├─ pages
+│        ├─ pages - Specific styles for different pages. 
 │        │  ├─ _home.scss
 │        │  └─ _index.scss
-│        ├─ themes
+│        ├─ themes - Specific themes like admin page, dark mode etc.
 │        │  ├─ _admin.scss
 │        │  ├─ _index.scss
 │        │  └─ _theme.scss
-│        └─ vendors
+│        └─ vendors - Store all helper utilities like normalize.css, Bootstrap etc.
 │           ├─ _breakpoint.scss
 │           ├─ _index.scss
 │           └─ _normalize.scss
@@ -86,10 +86,12 @@ npm install
 └─ yarn.lock
 ```
 
-# Adding a new .scss file 
+# Documentation
+
+## Adding a new .scss file 
 When a new file created in any directory, the name of the file should be @forward to the index.scss on the same directory. It won't compile into the main.scss file otherwise. 
 
-# Usage of abstracts folder
+## Usage of abstracts folder
 
 Pass the abstracts folder as a global value at the start of any.scss file if you wish to utilize the mixin, variables, or breakpoints. 
 
@@ -341,7 +343,7 @@ Apply @include function to an element and it will compiles the autoprefixer rule
 
 <br>
 
-# Example of font-weight
+## Example of font-weight
 
 Edit the font-weight object as you wish.
 
@@ -368,38 +370,9 @@ h1 {
 ```
 <br>
 
-<hr> 
+## License
 
-## Folders  
-
-### ```abstracts```
-
-Breakpoints, variables, functions and mixin values.
-
-### ```base```
-
-Base styles and typography rules.
-
-### ```components```
-
-All the components. 
-
-### ```layout```
-
-Styles of page elements like navigation bar, header, footer etc.
-
-### ```pages```
-
-Specific styles for different pages. 
-
-### ```themes```
-
-Specific themes like admin page, dark mode etc.
-
-### ```vendor```
-
-Store all helper utilities like normalize.css, Bootstrap etc.
-
+Licensed under the MIT license, see [LICENSE](https://github.com/aycanogut/sass-boilerplate/blob/main/LICENSE) for details.
 
 <br>
 <hr>
@@ -408,8 +381,3 @@ I took some of the @mixin patterns from [Kevin Powell](https://www.kevinpowell.c
 
 <hr>
 <br>
-
-## License
-
-Licensed under the MIT license, see [LICENSE](https://github.com/aycanogut/sass-boilerplate/blob/main/LICENSE) for details.
-
