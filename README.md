@@ -28,6 +28,64 @@ yarn install
 npm install 
 ```
 
+# Structure
+```
+├─ dist
+│  ├─ index.css
+│  ├─ index.css.map
+|  ├─ script.js
+|  └─ script.js
+├─ src
+│  └─ assets
+│     ├─ images
+│     │  └─ tech-stack.png
+│     ├─ js
+│     │  └─ script.js
+│     └─ styles
+│        ├─ abstracts
+│        │  ├─ _breakpoint.scss
+│        │  ├─ _fonts.scss
+│        │  ├─ _functions.scss
+│        │  ├─ _index.scss
+│        │  ├─ _mixin.scss
+│        │  └─ _variables.scss
+│        ├─ base
+│        │  ├─ _base.scss
+│        │  ├─ _index.scss
+│        │  └─ _typo.scss
+│        ├─ components
+│        │  ├─ _components.scss
+│        │  └─ _index.scss
+│        ├─ layout
+│        │  ├─ _footeer.scss
+│        │  ├─ _grid.scss
+│        │  ├─ _header.scss
+│        │  ├─ _index.scss
+│        │  ├─ _layout.scss
+│        │  ├─ _nav.scss
+│        │  └─ _sidebar.scss
+│        ├─ pages
+│        │  ├─ _home.scss
+│        │  └─ _index.scss
+│        ├─ themes
+│        │  ├─ _admin.scss
+│        │  ├─ _index.scss
+│        │  └─ _theme.scss
+│        └─ vendors
+│           ├─ _breakpoint.scss
+│           ├─ _index.scss
+│           └─ _normalize.scss
+│       
+│  
+├─ .gitignore
+├─ .gulpfile.js
+├─ index.html
+├─ LICENSE
+├─ package.json
+├─ README.md
+└─ yarn.lock
+```
+
 # Adding a new .scss file 
 When a new file created in any directory, the name of the file should be @forward to the index.scss on the same directory. It won't compile into the main.scss file otherwise. 
 
