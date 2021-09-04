@@ -18,7 +18,7 @@ mixins, breakpoints, variables and [normalize.css](https://necolas.github.io/nor
 
 # Installation
 
-### yarn:
+### yarn
 ```
 yarn install
 ```
