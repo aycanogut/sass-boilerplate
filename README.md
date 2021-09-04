@@ -4,7 +4,7 @@
 ![image](./src/assets/images/tech-stack.png)
 <br>
 
-Ready to use SASS boilerplate to develop web projects with [gulp.js](https://gulpjs.com/).
+Ready to use SASS boilerplate to develop web projects with [gulp.js](https://gulpjs.com/) including
 mixins, breakpoints, variables and [normalize.css](https://necolas.github.io/normalize.css/).  
 
 ### Gulp Features
